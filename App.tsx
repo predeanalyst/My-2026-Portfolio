@@ -22,7 +22,7 @@ const App: React.FC = () => {
         <Education />
         
         {/* Contact CTA */}
-        <section className="py-32 bg-slate-900 overflow-hidden relative border-t border-slate-800">
+        <section id="contact" className="py-32 bg-slate-900 overflow-hidden relative border-t border-slate-800 scroll-mt-28">
           <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
              <div className="absolute top-1/4 -left-20 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px]" />
              <div className="absolute bottom-1/4 -right-20 w-[500px] h-[500px] bg-indigo-600/10 rounded-full blur-[120px]" />

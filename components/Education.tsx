@@ -5,7 +5,7 @@ import { GraduationCap, Award, ExternalLink } from 'lucide-react';
 
 const Education: React.FC = () => {
   return (
-    <section id="education" className="py-24 bg-slate-50 border-t border-slate-100">
+    <section id="education" className="py-24 bg-slate-50 border-t border-slate-100 scroll-mt-28">
       <div className="max-w-6xl mx-auto px-4 grid lg:grid-cols-[1fr_1.5fr] gap-16">
         <div>
           <h2 className="text-3xl font-black text-slate-900 mb-10 flex items-center gap-3">

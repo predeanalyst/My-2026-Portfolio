@@ -83,9 +83,6 @@ const Hero: React.FC = () => {
               src={PROFILE_IMAGE} 
               alt="Precious Benjamin Iyekeoretin" 
               className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-              onError={(e) => {
-                e.currentTarget.src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000";
-              }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-40" />
           </div>
@@ -93,28 +90,24 @@ const Hero: React.FC = () => {
           {/* Decorative Elements */}
           <div className="absolute -top-10 -right-10 w-40 h-40 bg-blue-600/10 rounded-full blur-2xl -z-0" />
           
-          {/* Dynamic Floating Badges */}
-          <div className="absolute top-1/4 -right-12 bg-white p-5 rounded-[2rem] shadow-2xl border border-slate-100 animate-float">
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center text-white shadow-xl shadow-blue-100">
-                <Database size={24} />
-              </div>
-              <div>
-                <p className="text-[10px] text-slate-400 font-black uppercase tracking-widest">Mastery</p>
-                <p className="font-black text-slate-900 text-sm">SAP BW HANA</p>
-              </div>
+          {/* Dynamic Floating Badges - Added z-30 to bring them strictly to the front */}
+          <div className="absolute top-1/4 -right-12 bg-white/95 backdrop-blur-md p-5 rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.15)] border border-white/50 animate-float flex items-center gap-4 pr-10 z-30">
+            <div className="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center text-white shadow-xl shadow-blue-100">
+              <Database size={24} />
+            </div>
+            <div>
+              <p className="text-[10px] text-slate-400 font-black uppercase tracking-widest leading-none mb-1">Expertise</p>
+              <p className="font-black text-slate-900 text-sm">SAP CONSULTANT</p>
             </div>
           </div>
 
-          <div className="absolute bottom-12 -left-12 bg-slate-900 p-5 rounded-[2rem] shadow-2xl border border-slate-800 animate-float-delayed">
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-blue-400 rounded-2xl flex items-center justify-center text-slate-900">
-                <BrainCircuit size={24} />
-              </div>
-              <div>
-                <p className="text-[10px] text-blue-400/60 font-black uppercase tracking-widest">Innovation</p>
-                <p className="font-black text-white text-sm">Energy AI/ML</p>
-              </div>
+          <div className="absolute bottom-16 -left-12 bg-slate-950 p-3 pl-3 pr-6 rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.3)] border border-slate-800 animate-float-delayed flex items-center gap-4 z-30">
+            <div className="w-12 h-12 bg-blue-400 rounded-2xl flex items-center justify-center text-slate-950 shadow-lg shadow-blue-400/20">
+              <BrainCircuit size={26} />
+            </div>
+            <div>
+              <p className="text-[10px] text-blue-400/60 font-black uppercase tracking-widest leading-none mb-1">Innovation</p>
+              <p className="font-black text-white text-sm">AI ENGINEER</p>
             </div>
           </div>
         </div>
@@ -127,17 +120,17 @@ const Hero: React.FC = () => {
       <style>{`
         @keyframes float {
           0%, 100% { transform: translateY(0px) rotate(0deg); }
-          50% { transform: translateY(-20px) rotate(2deg); }
+          50% { transform: translateY(-20px) rotate(1deg); }
         }
         @keyframes float-delayed {
           0%, 100% { transform: translateY(0px) rotate(0deg); }
-          50% { transform: translateY(-15px) rotate(-2deg); }
+          50% { transform: translateY(-15px) rotate(-1deg); }
         }
         .animate-float {
-          animation: float 5s ease-in-out infinite;
+          animation: float 6s ease-in-out infinite;
         }
         .animate-float-delayed {
-          animation: float-delayed 6s ease-in-out infinite;
+          animation: float-delayed 7s ease-in-out infinite;
           animation-delay: 1.5s;
         }
       `}</style>

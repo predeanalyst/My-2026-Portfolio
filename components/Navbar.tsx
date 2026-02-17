@@ -22,62 +22,59 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'glass shadow-sm py-4' : 'bg-transparent py-6'}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'glass border-b border-slate-100 py-4 shadow-sm' : 'bg-transparent py-6'}`}>
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2 text-2xl font-bold tracking-tighter text-slate-900">
-          <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-blue-200">
+        <a href="#top" className="flex items-center gap-2 text-2xl font-black tracking-tighter text-slate-900 group">
+          <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform">
             <Cpu size={24} />
           </div>
-          <span>PI<span className="text-blue-600">.</span></span>
+          <span className="group-hover:text-blue-600 transition-colors">PI<span className="text-blue-600">.</span></span>
         </a>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-10">
           {navLinks.map(link => (
             <a 
               key={link.name} 
               href={link.href} 
-              className="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors"
+              className="text-xs font-black uppercase tracking-widest text-slate-500 hover:text-blue-600 transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-blue-600 after:transition-all hover:after:w-full"
             >
               {link.name}
             </a>
           ))}
           <a 
-            href="https://www.linkedin.com/in/precious-iyekeoretin-sap-fico-bw-cpm-9b473b24a/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-5 py-2.5 bg-slate-900 text-white rounded-lg text-sm font-bold hover:bg-slate-800 transition-all"
+            href="#contact"
+            className="px-6 py-3 bg-slate-900 text-white rounded-xl text-xs font-black uppercase tracking-widest hover:bg-blue-600 transition-all shadow-lg hover:shadow-blue-200"
           >
             Connect
           </a>
         </div>
 
         {/* Mobile Toggle */}
-        <button className="md:hidden text-slate-900" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-          {mobileMenuOpen ? <X /> : <Menu />}
+        <button className="md:hidden text-slate-900 p-2 hover:bg-slate-100 rounded-lg transition-colors" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+          {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white border-t border-slate-100 shadow-xl p-4 flex flex-col gap-4">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-white border-t border-slate-100 shadow-2xl p-6 flex flex-col gap-6 animate-in fade-in slide-in-from-top-4 duration-300">
           {navLinks.map(link => (
             <a 
               key={link.name} 
               href={link.href} 
-              className="text-lg font-bold text-slate-900 p-2"
+              className="text-xl font-black text-slate-900 p-2 hover:text-blue-600 transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               {link.name}
             </a>
           ))}
           <a 
-            href="https://www.linkedin.com/in/precious-iyekeoretin-sap-fico-bw-cpm-9b473b24a/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full py-4 bg-blue-600 text-white rounded-xl font-bold text-center"
+            href="#contact"
+            className="w-full py-5 bg-blue-600 text-white rounded-2xl font-black text-center text-lg shadow-xl shadow-blue-100"
+            onClick={() => setMobileMenuOpen(false)}
           >
-            LinkedIn Profile
+            Connect With Me
           </a>
         </div>
       )}

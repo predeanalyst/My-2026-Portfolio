@@ -5,10 +5,10 @@ import { Briefcase, Calendar, Star, Target, ShieldCheck } from 'lucide-react';
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="py-24 bg-slate-50">
+    <section id="experience" className="py-24 bg-slate-50 scroll-mt-28">
       <div className="max-w-6xl mx-auto px-4">
         <div className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Work History & Impact</h2>
+          <h2 className="text-3xl md:text-5xl font-black text-slate-900 mb-6 tracking-tight">Work History & Impact</h2>
           <div className="w-20 h-1.5 bg-blue-600 rounded-full" />
         </div>
         

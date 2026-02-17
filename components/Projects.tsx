@@ -14,20 +14,17 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <section id="projects" className="py-24 bg-white">
+    <section id="projects" className="py-24 bg-white scroll-mt-28">
       <div className="max-w-6xl mx-auto px-4">
-        {/* STRATEGIC AI/ML SECTION */}
-        <div className="mb-16">
-          <div className="flex items-center gap-4 mb-4">
-            <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center text-white shadow-xl shadow-blue-100">
-              <Zap size={24} />
-            </div>
-            <div>
-              <h2 className="text-3xl md:text-4xl font-black text-slate-900">AI & ML Focus</h2>
-              <p className="text-slate-500 font-medium">Strategic innovations for the Oil & Gas industry</p>
-            </div>
+        {/* MAIN HEADING AS REQUESTED */}
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-600 font-bold text-xs uppercase tracking-widest mb-4">
+            Innovation Pipeline
           </div>
-          <div className="w-20 h-1.5 bg-blue-600 rounded-full" />
+          <h2 className="text-3xl md:text-5xl font-black text-slate-900 mb-6 tracking-tight">AI & ML Focus</h2>
+          <p className="text-slate-600 max-w-2xl mx-auto font-medium text-lg leading-relaxed">
+            Pioneering predictive maintenance and intelligent automation solutions for the global upstream energy sector.
+          </p>
         </div>
         
         <div className="grid md:grid-cols-2 gap-8 mb-24">

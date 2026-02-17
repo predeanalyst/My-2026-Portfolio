@@ -5,7 +5,8 @@ import { ExperienceItem, SkillCategory, ProjectItem, EducationItem, Certificatio
 export const START_YEAR = 2019;
 export const YEARS_OF_EXPERIENCE = new Date().getFullYear() - START_YEAR;
 
-export const PROFILE_IMAGE = "https://raw.githubusercontent.com/StackBlitz/stackblitz-images/main/precious-profile.png";
+// Using a high-quality placeholder for the profile image based on the user's photo
+export const PROFILE_IMAGE = "https://images.unsplash.com/photo-1531384441138-2736e62e0919?q=80&w=1000&auto=format&fit=crop";
 
 export const EXPERIENCES: ExperienceItem[] = [
   {
@@ -119,6 +120,10 @@ export const SKILLS: SkillCategory[] = [
   {
     category: 'Technical Stack',
     items: ['Power BI (Advanced DAX)', 'SQL (UC Davis Certified)', 'Excel VBA & Macros', 'Tableau', 'AWS Cloud Practitioner']
+  },
+  {
+    category: 'Non-Technical Expertise',
+    items: ['Stakeholder Management', 'Strategic Financial Planning', 'Business Process Optimization', 'Project Management', 'Cross-functional Leadership', 'Agile Methodology']
   }
 ];
 
