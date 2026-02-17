@@ -1,7 +1,10 @@
 
 import { ExperienceItem, SkillCategory, ProjectItem, EducationItem, CertificationItem } from './types';
 
-// Using the provided professional image URL from the context
+// Dynamic experience calculation starting from 2019
+export const START_YEAR = 2019;
+export const YEARS_OF_EXPERIENCE = new Date().getFullYear() - START_YEAR;
+
 export const PROFILE_IMAGE = "https://raw.githubusercontent.com/StackBlitz/stackblitz-images/main/precious-profile.png";
 
 export const EXPERIENCES: ExperienceItem[] = [
@@ -10,7 +13,7 @@ export const EXPERIENCES: ExperienceItem[] = [
     role: 'Finance Advisor, SAP FICO BW',
     company: 'RENAISSANCE AFRICA ENERGY COMPANY',
     location: 'Lagos State, Nigeria',
-    period: 'May 2024 - Present',
+    period: 'May 2025 - Present',
     description: [
       'Developing customized reports and dashboards using SAP tools for proactive financial management.',
       'Integrating SAP BW with FI, MM, PM, and PS modules to streamline data flow and enhance reporting.',

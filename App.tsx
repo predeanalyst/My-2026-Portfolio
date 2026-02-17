@@ -6,12 +6,12 @@ import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Education from './components/Education';
-import AIImageLab from './components/AIImageLab';
-import { Mail, Linkedin, MapPin, ExternalLink } from 'lucide-react';
+import { Mail, Linkedin, MapPin, ExternalLink, Cpu } from 'lucide-react';
+import { YEARS_OF_EXPERIENCE } from './constants';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen selection:bg-blue-100 selection:text-blue-900">
       <Navbar />
       
       <main>
@@ -20,87 +20,96 @@ const App: React.FC = () => {
         <Skills />
         <Projects />
         <Education />
-        <AIImageLab />
         
         {/* Contact CTA */}
-        <section className="py-24 bg-blue-600 overflow-hidden relative">
-          <div className="absolute top-0 left-0 w-full h-full">
-             <div className="absolute top-1/4 -left-20 w-80 h-80 bg-white/10 rounded-full blur-3xl" />
-             <div className="absolute bottom-1/4 -right-20 w-80 h-80 bg-blue-400/20 rounded-full blur-3xl" />
+        <section className="py-32 bg-slate-900 overflow-hidden relative border-t border-slate-800">
+          <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+             <div className="absolute top-1/4 -left-20 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px]" />
+             <div className="absolute bottom-1/4 -right-20 w-[500px] h-[500px] bg-indigo-600/10 rounded-full blur-[120px]" />
           </div>
           
-          <div className="max-w-4xl mx-auto px-4 text-center relative z-10 text-white">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">Ready to transform your business processes?</h2>
-            <p className="text-xl text-blue-100 mb-12 max-w-2xl mx-auto leading-relaxed">
-              Whether it's a new SAP implementation, a complex data migration, or optimized financial reporting, let's discuss how my expertise can drive value for your organization.
+          <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold uppercase tracking-widest mb-8">
+              <Cpu size={14} /> Available for Strategic Consultation
+            </div>
+            <h2 className="text-4xl md:text-6xl font-black mb-8 text-white leading-tight">
+              Let's build the future of <br /><span className="text-blue-500">Intelligent Energy.</span>
+            </h2>
+            <p className="text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed font-medium">
+              Ready to deploy {YEARS_OF_EXPERIENCE}+ years of expertise in SAP landscapes and Machine Learning to optimize your financial and operational workflows.
             </p>
-            <div className="flex flex-wrap justify-center gap-6">
+            <div className="flex flex-col sm:flex-row justify-center gap-6">
               <a 
                 href="mailto:preciousiyekeoretin5@gmail.com" 
-                className="px-10 py-5 bg-white text-blue-600 rounded-2xl font-bold text-lg flex items-center gap-3 hover:bg-blue-50 transition-all shadow-xl"
+                className="px-12 py-5 bg-blue-600 text-white rounded-2xl font-black text-xl flex items-center justify-center gap-3 hover:bg-blue-700 transition-all shadow-[0_20px_40px_-15px_rgba(37,99,235,0.4)]"
               >
-                <Mail size={24} /> Get in Touch
+                <Mail size={24} /> Start Conversation
               </a>
               <a 
                 href="https://www.linkedin.com/in/precious-iyekeoretin-sap-fico-bw-cpm-9b473b24a/" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-10 py-5 bg-blue-700 text-white border border-blue-500 rounded-2xl font-bold text-lg flex items-center gap-3 hover:bg-blue-800 transition-all"
+                className="px-12 py-5 bg-white/5 text-white border border-white/10 rounded-2xl font-black text-xl flex items-center justify-center gap-3 hover:bg-white/10 transition-all backdrop-blur-sm"
               >
-                <Linkedin size={24} /> View Full Profile
+                <Linkedin size={24} /> LinkedIn
               </a>
             </div>
           </div>
         </section>
       </main>
 
-      <footer className="py-12 bg-slate-900 text-slate-400">
+      <footer className="py-20 bg-black text-slate-500">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-12 mb-12">
-            <div>
-              <div className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-                <div className="w-8 h-8 bg-blue-600 rounded-lg" />
-                <span>PI.</span>
+          <div className="grid md:grid-cols-4 gap-12 mb-16">
+            <div className="md:col-span-2">
+              <div className="text-3xl font-black text-white mb-8 flex items-center gap-2">
+                <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white">
+                  <Cpu size={24} />
+                </div>
+                <span>PI<span className="text-blue-600">.</span></span>
               </div>
-              <p className="leading-relaxed mb-6 text-sm">
-                Specialized SAP Consultant & Data Analyst focusing on Financial Accounting, Business Intelligence, and Oil & Gas Finance Automation.
+              <p className="leading-relaxed mb-8 text-lg max-w-md">
+                Bridging the gap between Enterprise Finance and Artificial Intelligence. Specialized in SAP BW/FICO ecosystems and Predictive Analytics for the global energy industry.
               </p>
-              <div className="flex gap-4">
-                <a href="https://www.linkedin.com/in/precious-iyekeoretin-sap-fico-bw-cpm-9b473b24a/" target="_blank" className="hover:text-blue-400 transition-colors"><Linkedin size={20} /></a>
-                <a href="mailto:preciousiyekeoretin5@gmail.com" className="hover:text-blue-400 transition-colors"><Mail size={20} /></a>
+              <div className="flex gap-6">
+                <a href="https://www.linkedin.com/in/precious-iyekeoretin-sap-fico-bw-cpm-9b473b24a/" target="_blank" className="text-white hover:text-blue-500 transition-all hover:scale-110"><Linkedin size={24} /></a>
+                <a href="mailto:preciousiyekeoretin5@gmail.com" className="text-white hover:text-blue-500 transition-all hover:scale-110"><Mail size={24} /></a>
               </div>
             </div>
             
             <div>
-              <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Navigation</h4>
-              <ul className="space-y-4 text-sm">
-                <li><a href="#experience" className="hover:text-white transition-colors">Experience</a></li>
-                <li><a href="#projects" className="hover:text-white transition-colors">Projects</a></li>
-                <li><a href="#education" className="hover:text-white transition-colors">Education</a></li>
-                <li><a href="#ai-lab" className="hover:text-white transition-colors">AI Studio</a></li>
+              <h4 className="text-white font-black mb-8 uppercase tracking-widest text-xs">Resources</h4>
+              <ul className="space-y-6 text-sm font-bold">
+                <li><a href="#experience" className="hover:text-blue-500 transition-colors">Career Timeline</a></li>
+                <li><a href="#projects" className="hover:text-blue-500 transition-colors">Project Portfolio</a></li>
+                <li><a href="#education" className="hover:text-blue-500 transition-colors">Academic Credentials</a></li>
+                <li><a href="#skills" className="hover:text-blue-500 transition-colors">Tech Stack</a></li>
               </ul>
             </div>
             
             <div>
-              <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Quick Contacts</h4>
-              <ul className="space-y-4 text-sm">
-                <li className="flex items-center gap-3"><MapPin size={18} /> Lagos State, Nigeria</li>
-                <li className="flex items-center gap-3"><Linkedin size={18} /> @precious-iyekeoretin</li>
+              <h4 className="text-white font-black mb-8 uppercase tracking-widest text-xs">Direct Contact</h4>
+              <ul className="space-y-6 text-sm font-bold">
+                <li className="flex items-center gap-3"><MapPin size={18} className="text-blue-600" /> Lagos State, Nigeria</li>
+                <li className="flex items-center gap-3 text-white">
+                   <Mail size={18} className="text-blue-600" /> 
+                   preciousiyekeoretin5@gmail.com
+                </li>
                 <li>
                   <a 
                     href="https://www.linkedin.com/in/precious-iyekeoretin-sap-fico-bw-cpm-9b473b24a/" 
                     target="_blank"
-                    className="flex items-center gap-2 text-blue-400 hover:text-blue-300 font-medium"
+                    className="flex items-center gap-2 text-blue-500 hover:text-blue-400 transition-all"
                   >
-                    LinkedIn Profile <ExternalLink size={14} />
+                    Professional Network <ExternalLink size={14} />
                   </a>
                 </li>
               </ul>
             </div>
           </div>
           
-          <div className="pt-8 border-t border-slate-800 text-center text-xs">
-            <p>&copy; {new Date().getFullYear()} Precious Benjamin Iyekeoretin. All rights reserved.</p>
+          <div className="pt-8 border-t border-white/5 text-center text-[10px] font-black uppercase tracking-[0.3em] text-slate-700">
+            <p>&copy; {new Date().getFullYear()} Precious Benjamin Iyekeoretin • {YEARS_OF_EXPERIENCE}+ Years of Innovation</p>
           </div>
         </div>
       </footer>
