@@ -6,7 +6,7 @@ export const START_YEAR = 2019;
 export const YEARS_OF_EXPERIENCE = new Date().getFullYear() - START_YEAR;
 
 // Using a high-quality placeholder for the profile image based on the user's photo
-export const PROFILE_IMAGE = "https://images.unsplash.com/photo-1531384441138-2736e62e0919?q=80&w=1000&auto=format&fit=crop";
+export const PROFILE_IMAGE = "https://media.licdn.com/dms/image/v2/D4E03AQGv3fuF6vSoEw/profile-displayphoto-scale_200_200/B4EZusKRQkL0AY-/0/1768119933684?e=1772668800&v=beta&t=69TCusQNNaXvOlQ7j7vLm0NovHs-FdIT8hOn2crYm5U?q=80&w=1000&auto=format&fit=crop";
 
 export const EXPERIENCES: ExperienceItem[] = [
   {
