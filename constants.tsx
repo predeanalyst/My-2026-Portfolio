@@ -6,7 +6,7 @@ export const START_YEAR = 2019;
 export const YEARS_OF_EXPERIENCE = new Date().getFullYear() - START_YEAR;
 
 // Using a high-quality placeholder for the profile image based on the user's photo
-export const PROFILE_IMAGE = "https://drive.google.com/file/d/1J0xt0qUnuFrLMouoIjnYlG5hIvLRL_XH?q=80&w=1000&auto=format&fit=crop";
+export const PROFILE_IMAGE = "https://drive.google.com/file/d/1J0xt0qUnuFrLMouoIjnYlG5hIvLRL_XH/edit?q=80&w=1000&auto=format&fit=crop";
 
 export const EXPERIENCES: ExperienceItem[] = [
   {
@@ -77,34 +77,144 @@ export const EXPERIENCES: ExperienceItem[] = [
 
 export const PROJECTS: ProjectItem[] = [
   {
-    title: 'Drilling Efficiency Predictive AI',
-    description: 'Developed a machine learning model to predict drilling bit failure in upstream operations, utilizing historical sensor data to reduce downtime.',
-    category: 'AI & ML in Oil & Gas'
+    title: 'Real-time Anomaly Detection',
+    description: 'Implementation of LSTM-based autoencoders for unsupervised detection of sensor drift and equipment failure in offshore production assets.',
+    category: 'AI & ML in Oil & Gas',
+    link: 'https://github.com/precious-iyekeoretin/anomaly-detection-oilgas'
   },
   {
-    title: 'Reservoir Characterization via Deep Learning',
-    description: 'Using CNNs to automate the classification of facies from well log data, significantly speeding up geological interpretation workflows.',
-    category: 'AI & ML in Oil & Gas'
+    title: 'Gas Lift Production Optimization',
+    description: 'Developed a Reinforcement Learning framework to autonomously optimize gas-lift injection rates, maximizing recovery while minimizing operational costs.',
+    category: 'AI & ML in Oil & Gas',
+    link: 'https://github.com/precious-iyekeoretin/gas-lift-optimization'
   },
   {
-    title: 'Touchless MI Reporting Dashboard',
-    description: 'A fully automated Power BI suite integrated with SAP BW HANA that delivers real-time financial health metrics for Renaissance Africa Energy.',
-    category: 'Oil & Gas'
+    title: 'Hydrocarbon Production Forecasting',
+    description: 'Advanced time-series forecasting utilizing Attention-based RNN architectures to predict multi-phase flow rates with high confidence intervals.',
+    category: 'AI & ML in Oil & Gas',
+    link: 'https://github.com/precious-iyekeoretin/production-forecasting'
+  },
+  {
+    title: 'AI-Driven Seismic Interpretation',
+    description: 'Deep Learning models for automated seismic facies classification and salt body segmentation, enhancing structural interpretation accuracy and speed.',
+    category: 'AI & ML in Oil & Gas',
+    link: 'https://github.com/precious-iyekeoretin/seismic-interpretation'
+  },
+  {
+    title: 'Predictive Hydraulic Fracture Analytics',
+    description: 'Machine learning surrogate models trained on geomechanical simulations to predict fracture conductivity and geometry in unconventional reservoirs.',
+    category: 'AI & ML in Oil & Gas',
+    link: 'https://github.com/precious-iyekeoretin/hydraulic-fracture'
+  },
+  {
+    title: 'Sand Production Risk Modeling',
+    description: 'XGBoost-based classification system for early warning of sand production, integrating well-log data and real-time pressure gradients.',
+    category: 'AI & ML in Oil & Gas',
+    link: 'https://github.com/precious-iyekeoretin/sand-production'
+  },
+  {
+    title: 'Intelligent Well Spacing & field Layout',
+    description: 'Spatial clustering and interference modeling to optimize infill drilling patterns and minimize competitive drainage in complex reservoirs.',
+    category: 'AI & ML in Oil & Gas',
+    link: 'https://github.com/precious-iyekeoretin/well-spacing'
+  },
+  {
+    title: 'Multi-Objective Well Optimization',
+    description: 'Bayesian Optimization approach for determining optimal drawdown strategies and well placement to maximize asset Net Present Value (NPV).',
+    category: 'AI & ML in Oil & Gas',
+    link: 'https://github.com/precious-iyekeoretin/well-optimization'
+  },
+  {
+    title: 'Asset Management Capstone Project',
+    description: 'A comprehensive end-to-end data science solution for integrated asset management, combining technical performance with financial health metrics.',
+    category: 'AI & ML in Oil & Gas',
+    link: 'https://github.com/precious-iyekeoretin/capstone-project'
+  },
+  {
+    title: 'Production Performance Suite (Power BI)',
+    description: 'Integrated upstream production dashboard with real-time KPI tracking for well uptime and variance analysis.',
+    category: 'Data Science Portfolio',
+    link: 'https://app.powerbi.com/view?r=production-demo'
+  },
+  {
+    title: 'Capital Expenditure (CAPEX) Tracker (Power BI)',
+    description: 'Comprehensive financial dashboard for multi-asset budget monitoring and predictive cost-overrun alerts.',
+    category: 'Data Science Portfolio',
+    link: 'https://app.powerbi.com/view?r=capex-demo'
+  },
+  {
+    title: 'Automated Cash Flow Visualizer (Excel)',
+    description: 'High-fidelity financial visualization tool utilizing advanced VBA for dynamic reporting and sensitivity analysis.',
+    category: 'Data Science Portfolio'
+  },
+  {
+    title: 'Operational Risk Assessment Tool (Excel)',
+    description: 'Probabilistic risk modeling tool built in Excel with interactive heatmaps for prioritizing maintenance activities.',
+    category: 'Data Science Portfolio'
+  },
+  {
+    title: 'Global Asset Data ETL Pipeline (SQL)',
+    description: 'Architected a robust ETL process using T-SQL to normalize legacy production data for enterprise BI consumption.',
+    category: 'Data Science Portfolio',
+    link: 'https://github.com/precious-iyekeoretin/sql-etl-pipeline'
+  },
+  {
+    title: 'Finance Process Automation (Alteryx)',
+    description: 'Automated end-to-end tax compliance and reconciliation workflow reducing monthly processing time from days to minutes.',
+    category: 'Data Science Portfolio',
+    link: 'https://github.com/precious-iyekeoretin/alteryx-finance-automation'
   },
   {
     title: 'Customer Behavior Cluster Analysis',
     description: 'Unsupervised learning project using K-Means clustering to segment energy consumers based on usage patterns and payment history.',
-    category: 'Data Science Portfolio'
+    category: 'Data Science Portfolio',
+    link: 'https://github.com/precious-iyekeoretin/customer-segmentation'
   },
   {
     title: 'Market Trend Forecasting Engine',
     description: 'Time-series analysis project using Prophet and ARIMA models to forecast crude oil price volatility.',
-    category: 'Data Science Portfolio'
+    category: 'Data Science Portfolio',
+    link: 'https://github.com/precious-iyekeoretin/oil-price-forecast'
   },
   {
     title: 'Sentiment Analysis for Stakeholder Feedback',
     description: 'NLP pipeline built with Python and NLTK to analyze unstructured feedback from annual corporate reports.',
     category: 'Data Science Portfolio'
+  },
+  {
+    title: 'Finance Automation & BW Alternative Reporting',
+    description: 'Developed a suite of Excel VBA and SAP Scripting tools for MJE, WHT, VAT, and NCD reporting, reducing reporting cycles and dependency on legacy BW systems.',
+    category: 'Oil & Gas'
+  },
+  {
+    title: 'NCMT Tracking Application (Power Platform)',
+    description: 'A comprehensive automated solution using Power BI, Apps, and Automate to streamline contract creation and bidding for Nigerian Content Development.',
+    category: 'Oil & Gas'
+  },
+  {
+    title: 'SPDC Cost Performance Report',
+    description: 'End-to-end design and development of a financial monitoring report in SAP BW/BI, managing massive data extractions from 2008-2012 for trend analysis.',
+    category: 'Oil & Gas'
+  },
+  {
+    title: 'SAP Logon Setup Automation',
+    description: 'Created a Bash and Python executable script to automate SAP Logon configuration, enabling user self-service and eliminating setup backlogs.',
+    category: 'Oil & Gas'
+  },
+  {
+    title: 'SAP User Role Management Tool',
+    description: 'Excel VBA based system for mirroring user roles across SAP systems and detecting duplicate access to enhance compliance and security.',
+    category: 'Oil & Gas'
+  },
+  {
+    title: 'Help Desk Reporting Dashboard',
+    description: 'Automated daily incident reporting using Power BI and ServiceNow, reducing manual data processing time from 30 minutes to 5 minutes.',
+    category: 'Oil & Gas'
+  },
+  {
+    title: 'Employee Engagement Platform',
+    description: 'Cloud-based automation solution built with Power Automate to track milestones (birthdays/anniversaries) and deliver personalized executive alerts.',
+    category: 'Oil & Gas'
   }
 ];
 
@@ -119,7 +229,7 @@ export const SKILLS: SkillCategory[] = [
   },
   {
     category: 'Technical Stack',
-    items: ['Power BI (Advanced DAX)', 'SQL (UC Davis Certified)', 'Excel VBA & Macros', 'Tableau', 'AWS Cloud Practitioner']
+    items: ['Power BI (Advanced DAX)', 'SQL (UC Davis Certified)', 'Excel VBA & Macros', 'Tableau', 'Alteryx Designer', 'AWS Cloud Practitioner']
   },
   {
     category: 'Non-Technical Expertise',
