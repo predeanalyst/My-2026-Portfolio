@@ -1,5 +1,7 @@
 {
   "name": "Precious Iyekeoretin | SAP & Data Science Portfolio",
   "description": "Professional portfolio for Precious Iyekeoretin, highlighting expertise in SAP FICO, BW, Data Science, and AI/ML applications in the Oil & Gas industry.",
-  "requestFramePermissions": []
+  "requestFramePermissions": [
+    "camera"
+  ]
 }

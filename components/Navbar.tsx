@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Cpu } from 'lucide-react';
+import { Menu, X, Cpu, Sparkles } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -18,6 +18,7 @@ const Navbar: React.FC = () => {
     { name: 'Experience', href: '#experience' },
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
+    { name: 'AI Lab', href: '#ai-lab', special: true },
     { name: 'Education', href: '#education' },
   ];
 
@@ -37,8 +38,9 @@ const Navbar: React.FC = () => {
             <a 
               key={link.name} 
               href={link.href} 
-              className="text-xs font-black uppercase tracking-widest text-slate-500 hover:text-blue-600 transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-blue-600 after:transition-all hover:after:w-full"
+              className={`text-xs font-black uppercase tracking-widest transition-colors relative flex items-center gap-1.5 ${link.special ? 'text-blue-600' : 'text-slate-500 hover:text-blue-600'} after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-blue-600 after:transition-all hover:after:w-full`}
             >
+              {link.special && <Sparkles size={12} />}
               {link.name}
             </a>
           ))}
@@ -63,9 +65,10 @@ const Navbar: React.FC = () => {
             <a 
               key={link.name} 
               href={link.href} 
-              className="text-xl font-black text-slate-900 p-2 hover:text-blue-600 transition-colors"
+              className={`text-xl font-black p-2 flex items-center gap-2 ${link.special ? 'text-blue-600' : 'text-slate-900 hover:text-blue-600'}`}
               onClick={() => setMobileMenuOpen(false)}
             >
+              {link.special && <Sparkles size={20} />}
               {link.name}
             </a>
           ))}

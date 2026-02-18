@@ -5,8 +5,8 @@ import { ExperienceItem, SkillCategory, ProjectItem, EducationItem, Certificatio
 export const START_YEAR = 2019;
 export const YEARS_OF_EXPERIENCE = new Date().getFullYear() - START_YEAR;
 
-// Using a high-quality placeholder for the profile image based on the user's photo
-export const PROFILE_IMAGE = "https://drive.google.com/file/d/1J0xt0qUnuFrLMouoIjnYlG5hIvLRL_XH/edit?q=80&w=1000&auto=format&fit=crop";
+// Updated to use a direct link format for the provided Google Drive image ID
+export const PROFILE_IMAGE = "https://lh3.googleusercontent.com/d/1J0xt0qUnuFrLMouoIjnYlG5hIvLRL_XH";
 
 export const EXPERIENCES: ExperienceItem[] = [
   {

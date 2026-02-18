@@ -6,6 +6,7 @@ import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Education from './components/Education';
+import AIImageLab from './components/AIImageLab';
 import { Mail, Linkedin, MapPin, ExternalLink, Cpu } from 'lucide-react';
 import { YEARS_OF_EXPERIENCE } from './constants';
 
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <Experience />
         <Skills />
         <Projects />
+        <AIImageLab />
         <Education />
         
         {/* Contact CTA */}
@@ -82,8 +84,8 @@ const App: React.FC = () => {
               <ul className="space-y-6 text-sm font-bold">
                 <li><a href="#experience" className="hover:text-blue-500 transition-colors">Career Timeline</a></li>
                 <li><a href="#projects" className="hover:text-blue-500 transition-colors">Project Portfolio</a></li>
+                <li><a href="#ai-lab" className="hover:text-blue-500 transition-colors">AI Magic Studio</a></li>
                 <li><a href="#education" className="hover:text-blue-500 transition-colors">Academic Credentials</a></li>
-                <li><a href="#skills" className="hover:text-blue-500 transition-colors">Tech Stack</a></li>
               </ul>
             </div>
             

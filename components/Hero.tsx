@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight, Linkedin, Mail, MapPin, ChevronDown, BrainCircuit, Database, ShieldCheck, Zap } from 'lucide-react';
+import { ArrowRight, Linkedin, Mail, MapPin, ChevronDown, BrainCircuit, Database, ShieldCheck, Zap, Camera } from 'lucide-react';
 import { PROFILE_IMAGE, YEARS_OF_EXPERIENCE } from '../constants';
 
 const Hero: React.FC = () => {
@@ -84,13 +84,27 @@ const Hero: React.FC = () => {
               alt="Precious Benjamin Iyekeoretin" 
               className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-40" />
+            
+            {/* Overlay for Changing Profile Image via AI Lab */}
+            <div className="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
+              <a 
+                href="#ai-lab" 
+                className="flex flex-col items-center gap-2 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform"
+              >
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-md border border-white/30 hover:bg-white/30 transition-colors">
+                  <Camera size={28} />
+                </div>
+                <span className="font-black text-xs uppercase tracking-[0.2em]">Edit with AI Magic</span>
+              </a>
+            </div>
+
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-40 pointer-events-none" />
           </div>
           
           {/* Decorative Elements */}
           <div className="absolute -top-10 -right-10 w-40 h-40 bg-blue-600/10 rounded-full blur-2xl -z-0" />
           
-          {/* Dynamic Floating Badges - Added z-30 to bring them strictly to the front */}
+          {/* Dynamic Floating Badges */}
           <div className="absolute top-1/4 -right-12 bg-white/95 backdrop-blur-md p-5 rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.15)] border border-white/50 animate-float flex items-center gap-4 pr-10 z-30">
             <div className="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center text-white shadow-xl shadow-blue-100">
               <Database size={24} />
