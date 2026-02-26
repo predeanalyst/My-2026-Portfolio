@@ -80,13 +80,13 @@ export const PROJECTS: ProjectItem[] = [
     title: 'Real-time Anomaly Detection',
     description: 'Implementation of LSTM-based autoencoders for unsupervised detection of sensor drift and equipment failure in offshore production assets.',
     category: 'AI & ML in Oil & Gas',
-    link: 'https://github.com/precious-iyekeoretin/anomaly-detection-oilgas'
+    link: 'https://github.com/predeanalyst/anomaly-detection-oilgas'
   },
   {
     title: 'Gas Lift Production Optimization',
     description: 'Developed a Reinforcement Learning framework to autonomously optimize gas-lift injection rates, maximizing recovery while minimizing operational costs.',
     category: 'AI & ML in Oil & Gas',
-    link: 'https://github.com/precious-iyekeoretin/gas-lift-optimization'
+    link: 'https://github.com/predeanalyst/gas-lift-optimization'
   },
   {
     title: 'Hydrocarbon Production Forecasting',
@@ -98,37 +98,37 @@ export const PROJECTS: ProjectItem[] = [
     title: 'AI-Driven Seismic Interpretation',
     description: 'Deep Learning models for automated seismic facies classification and salt body segmentation, enhancing structural interpretation accuracy and speed.',
     category: 'AI & ML in Oil & Gas',
-    link: 'https://github.com/precious-iyekeoretin/seismic-interpretation'
+    link: 'https://github.com/predeanalyst/seismic-interpretation'
   },
   {
     title: 'Predictive Hydraulic Fracture Analytics',
     description: 'Machine learning surrogate models trained on geomechanical simulations to predict fracture conductivity and geometry in unconventional reservoirs.',
     category: 'AI & ML in Oil & Gas',
-    link: 'https://github.com/precious-iyekeoretin/hydraulic-fracture'
+    link: 'https://github.com/predeanalyst/hydraulic-fracture'
   },
   {
     title: 'Sand Production Risk Modeling',
     description: 'XGBoost-based classification system for early warning of sand production, integrating well-log data and real-time pressure gradients.',
     category: 'AI & ML in Oil & Gas',
-    link: 'https://github.com/precious-iyekeoretin/sand-production'
+    link: 'https://github.com/predeanalyst/sand-production'
   },
   {
     title: 'Intelligent Well Spacing & field Layout',
     description: 'Spatial clustering and interference modeling to optimize infill drilling patterns and minimize competitive drainage in complex reservoirs.',
     category: 'AI & ML in Oil & Gas',
-    link: 'https://github.com/precious-iyekeoretin/well-spacing'
+    link: 'https://github.com/predeanalyst/well-spacing'
   },
   {
     title: 'Multi-Objective Well Optimization',
     description: 'Bayesian Optimization approach for determining optimal drawdown strategies and well placement to maximize asset Net Present Value (NPV).',
     category: 'AI & ML in Oil & Gas',
-    link: 'https://github.com/precious-iyekeoretin/well-optimization'
+    link: 'https://github.com/predeanalyst/well-optimization'
   },
   {
     title: 'Asset Management Capstone Project',
     description: 'A comprehensive end-to-end data science solution for integrated asset management, combining technical performance with financial health metrics.',
     category: 'AI & ML in Oil & Gas',
-    link: 'https://github.com/precious-iyekeoretin/capstone-project'
+    link: 'https://github.com/predeanalyst/capstone-project'
   },
   {
     title: 'Production Performance Suite (Power BI)',
@@ -156,25 +156,25 @@ export const PROJECTS: ProjectItem[] = [
     title: 'Global Asset Data ETL Pipeline (SQL)',
     description: 'Architected a robust ETL process using T-SQL to normalize legacy production data for enterprise BI consumption.',
     category: 'Data Science Portfolio',
-    link: 'https://github.com/precious-iyekeoretin/sql-etl-pipeline'
+    link: 'https://github.com/predeanalyst/sql-etl-pipeline'
   },
   {
     title: 'Finance Process Automation (Alteryx)',
     description: 'Automated end-to-end tax compliance and reconciliation workflow reducing monthly processing time from days to minutes.',
     category: 'Data Science Portfolio',
-    link: 'https://github.com/precious-iyekeoretin/alteryx-finance-automation'
+    link: 'https://github.com/predeanalyst/alteryx-finance-automation'
   },
   {
     title: 'Customer Behavior Cluster Analysis',
     description: 'Unsupervised learning project using K-Means clustering to segment energy consumers based on usage patterns and payment history.',
     category: 'Data Science Portfolio',
-    link: 'https://github.com/precious-iyekeoretin/customer-segmentation'
+    link: 'https://github.com/predeanalyst/customer-segmentation'
   },
   {
     title: 'Market Trend Forecasting Engine',
     description: 'Time-series analysis project using Prophet and ARIMA models to forecast crude oil price volatility.',
     category: 'Data Science Portfolio',
-    link: 'https://github.com/precious-iyekeoretin/oil-price-forecast'
+    link: 'https://github.com/predeanalyst/oil-price-forecast'
   },
   {
     title: 'Sentiment Analysis for Stakeholder Feedback',
